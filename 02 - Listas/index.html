@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02 - Listas</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Listas</h1>
+
+        <h2>Lista desordenada con <strong>ul</strong></h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+
+        <h2>Lista ordenada con <strong>ol</strong></h2>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </div>
+
+    <main class="mainContainer">
+        <h2>Lista anidada</h2>
+
+        <ul>
+            <li>Argentina
+                <ul>
+                    <li>Buenos Aires</li>
+                    <li>Tigre</li>
+                    <li>Cordoba</li>
+                </ul>
+            </li>
+            <li>Uruguay
+                <ul>
+                    <li>Punta del Este
+                        <ul>
+                            <li>La Barra</li>
+                            <li>José Ignacio</li>
+                        </ul>
+                    </li>
+                    <li>Montevideo</li>
+                    <li>La Pedrera</li>
+                </ul>
+            </li>
+            <li>Brasil
+                <ul>
+                    <li>Rio de Janeiro</li>
+                    <li>Porto Alegre</li>
+                    <li>Bahia</li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+
+    <div class="tableContainer">
+        <h2>Tablas</h2>
+
+        <table>
+            <tr>
+                <th>Compañia</th>
+                <th>Contacto</th>
+                <th>País</th>
+            </tr>
+            <tr>
+                <td>Pedidos Ya</td>
+                <td>Globant</td>
+                <td>DecemberLabs</td>
+            </tr>
+            <tr>
+                <td>LATAM</td>
+                <td>Uruguay</td>
+                <td>Uruguay</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="formularioContainer">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post" enctype="multipart/form-data"> <!-- Aquí va el documento que se encarga del procesamiento y el método GET/POST, el enctype es como se codificarán los datos enviados -->
+            <fieldset>
+                <legend>Datos del usuario</legend>
+                <div class="formularioNombre">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Ingresá tu nombre" id="nombre">
+                </div>
+
+                <div class="formularioApellido">
+                    <label for="apellido"></label>
+                    <input type="text" name="apellido" placeholder="Ingresá tu apellido" id="apellido">
+                </div>
+
+                <div class="formularioEmail">
+                    <label for="mail">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="formularioPassword">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+            </fieldset>
+
+            <div class="formularioTextarea">
+                <label for="mensaje">Dejá tu mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+            </div>
+
+            <div class="formularioRadio">
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="hombre" id="hombre" value="hombre">
+
+                <label for="mujer">Mujer</label>
+                <input type="radio" name="mujer" id="mujer" value="mujer">
+            </div>
+
+            <div class="formularioChecked">
+                <label for="acepta">Acepta los términos y condiciones</label>
+                <input type="checkbox" name="acepta" value="1">
+            </div>
+
+            <div class="formularioSelect">
+                <label for="talles">Talles</label>
+                <select name="talles" id="talles">
+                    <option value="" hidden>Selecciona una opción</option>
+                    <option value="L">Large</option>
+                    <option value="M">Medium</option>
+                    <option value="S">Small</option>
+                </select>
+            </div>
+
+            <div class="formularioBotones">
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Limpiar Formulario">
+                <input type="button" value="Sin acciones">
+            </div>
+
+
+
+        </form>
+    </div>
+
+    <div class="enlaces">
+        <h2>Enlaces</h2>
+
+        <h3>Enlace relativo - Dentro del propio sitio</h3>
+        <a href="formularios/contacto.html">Ir a contacto</a>
+        <a href="../02 - Listas/index.html">Ir al index</a>
+        
+        <h3>Enlace externo - Webs fuera del sitio</h3>
+        <a href="http://www.nacional.uy">Ir a nacional.uy</a>
+
+        <h3>Enlace anclajo (anchor/ancla)</h3>
+        <a href="#seccion1">Ir a sección 1</a>
+        <a href="#seccion2">Ir a sección 2</a>
+        <a href="#seccion3">Ir a sección 3</a>
+
+        <a href="../02 - Listas/media/imagen.jpg">
+            <img src="../02 - Listas/media/imagen.jpg" alt="Imagen de diseño">
+        </a>
+    </div>
+
+    <div id="seccion1">
+        <h2>Sección 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+    </div>
+
+    <div id="seccion2">
+        <h2>Sección 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+    </div>
+
+    <div id="seccion3">
+        <h2>Sección 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
+    </div>
+</body>
+</html>
