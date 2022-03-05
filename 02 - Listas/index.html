@@ -192,5 +192,58 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima perspiciatis, doloremque magni repellendus tempora eius dolores. Laudantium id perspiciatis optio sed nobis cum nam impedit quaerat. Nisi, deleniti laborum.</p>
     </div>
+
+    <!-- Desafío genérico - Crear dos listas, una ordenada y otra con viñetas -->
+
+    <ul>
+        <li>Matías</li>
+        <li>María</li>
+        <li>Titán</li>
+        <li>Pope</li>
+        <li>Alexandra</li>
+    </ul>
+
+    <ol>
+        <li>Encender y esperar que caliente la cafetera</li>
+        <li>Rellenar la cápsula</li>
+        <li>Introducir en la ranura</li>
+        <li>Accionar la cafetera</li>
+        <li>Enjoy!</li>
+    </ol>
+
+    <!-- Crear un formulario -->
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Información personal</legend>
+
+            <div class="form-personal-nombre">
+                <label for="nombre-personal">Nombre:</label>
+                <input type="text" name="nombre-personal" placeholder="Inserte su nombre">
+            </div>
+
+            <div class="form-personal-apellido">
+                <label for="apellido-personal">Apellido:</label>
+                <input type="text" name="apellido-personal" placeholder="Inserte su apellido">
+            </div>
+
+            <div class="form-horario-personal">
+                <label for="horario-personal">Introduzca el horario</label>
+                <select name="horario-personal" id="">
+                    <option value="" hidden>Seleccione un horario</option>
+                    <option value="8">8:00</option>
+                    <option value="10">10:00</option>
+                    <option value="12">12:00</option>
+                    <option value="14">14:00</option>
+                    <option value="16">16:00</option>
+                </select>
+            </div>
+
+            <div class="form-personal-botones">
+                <input type="submit" value="Reservar">
+                <input type="reset" value="Borrar todo">
+            </div>
+        </fieldset>
+    </form>
 </body>
 </html>
