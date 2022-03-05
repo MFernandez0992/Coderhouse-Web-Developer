@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>La Blanqueada Bar & Lounge</title>
+</head>
+<body>
+    <nav>
+        <img src="img/La Blanqueada - Logotipo Final Positivo.png" class="logo" alt="Logotipo La Blanqueada Bar">
+        <ul class="navegacion">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+            <li><a href="http://pedidosya.com.uy/restaurantes/montevideo/la-blanqueada-bar-lounge-menu/">Pedidos Ya</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Realizá tu reserva</h2>
+
+        <form action="#" method="get">
+
+            <div class="form-nombre">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Ingresá tu nombre">
+            </div>
+
+            <div class="form-apellido">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="Ingresá tu apellido">
+            </div>
+
+            <div class="form-mail">
+                <label for="mail">Mail</label>
+                <input type="text" name="mail" placeholder="Ingresá tu mail">
+            </div>
+
+            <div class="form-telefono">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" placeholder="Ingresá tu telefono">
+            </div>
+
+            <div class="form-dia">
+                <label for="diaReserva">Ingresá el día</label>
+                <input type="date" id="date" name="diaReserva" value="Ingresá el día" min="2022-03-05" max="2022-12-31">
+            </div>
+
+            <div class="form-hora">
+                <label for="horaReserva">Ingresá la hora</label>
+                <select name="hora" id="">
+                    <option value="18">18:00</option>
+                    <option value="19">19:00</option>
+                    <option value="20">20:00</option>
+                    <option value="21">21:00</option>
+                    <option value="22">22:00</option>
+                    <option value="23">23:00</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Reservar">
+            <input type="reset" value="Restablecer">
+        </form>
+    </main>
+
+    <footer>
+        <img src="img/La Blanqueada - Logotipo Final Positivo.png" class="logo" alt="Logotipo La Blanqueada Bar">
+        <p>La Blanqueada Bar & Lounge - Montevideo, Uruguay</p>
+    </footer>
+
+</body>
+</html>
