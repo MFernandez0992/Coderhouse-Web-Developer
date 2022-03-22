@@ -99,7 +99,15 @@ p{
     justify-content: space-around;
 }
 
+#menu{
+    background-color: #A0A0A0;
+    height: 100vh;
+}
 
+.containerMenu{
+    height: 100vh;
+    font-size: 2rem;
+}
 
 .btnReservas{
     border: 0.1rem solid white;
