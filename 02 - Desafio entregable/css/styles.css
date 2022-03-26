@@ -8,10 +8,15 @@ html{
 }
 
 nav{
-    margin-top: 2rem;
     display: flex;
+    background-color: black;
     justify-content: space-between;
-    height: 5rem;
+    align-items: center;
+    height: 8rem;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
 }
 
 .logo{
@@ -99,7 +104,15 @@ p{
     justify-content: space-around;
 }
 
+#menu{
+    background-color: #A0A0A0;
+    height: 100vh;
+}
 
+.containerMenu{
+    height: 100vh;
+    font-size: 2rem;
+}
 
 .btnReservas{
     border: 0.1rem solid white;
