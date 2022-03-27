@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #e9ecf4;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+
+    /* Aplico Grid al contenedor principal, le asigno una separación entre elementos del grid de 20px y defino 3 columnas de 1fr cada una, son 3 xq hay una para el widget-1, otra para el widget-2 y otra para el sidebar, y 4 filas siguiendo el mismo concepto y tamaño automático */
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    /* Con grid-template-areas puedo crear el template de la web con las secciones de los elementos en el grid */
+    grid-template-areas: 'header header header'
+                         'contenido contenido sidebar'
+                         'widget-1 widget-2 sidebar'
+                         'footer footer footer';
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer
+ {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* Le digo al header que ocupe todo el ancho del grid utilizadno grid-column, el primer número es dónde comienza y el 2do es en la línea del grid dónde termina */
+.contenedor .header{
+    background: #12203E;
+    color: #fff;
+    grid-area: header;
+}
+
+.contenedor .contenido{
+    /* con grid-area le asigno al elemento la sección del grid donde se ubicará */
+    grid-area: contenido;
+}
+
+.contenedor .sidebar {
+    background: #faa43d;
+    text-align: center;
+    /* Utilizo Flexbox para centrar horizontal y verticalmente el contenido*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    grid-area: sidebar;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2{
+    background: #55a8fd;
+    color: #fff;
+    height: 100px;
+    text-align: center;
+    /* Utilizo Flexbox para centrar horizontal y verticalmente el contenido*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenedor .widget-1{
+    grid-area: widget-1;
+}
+
+.contenedor .widget-2{
+    grid-area: widget-2;
+}
+
+.contenedor .footer{
+    background: #12203E;
+    color: #fff;
+    grid-area: footer;
+}
+
+@media screen and (max-width: 768px){
+    
+    .contenedor{
+        grid-template-areas: 'header header header'
+                             'contenido contenido contenido'
+                             'sidebar sidebar sidebar'
+                             'widget-1 widget-1 widget-2'
+                             'footer footer footer';
+    }
+}
