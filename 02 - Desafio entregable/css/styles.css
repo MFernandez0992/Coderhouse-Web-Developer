@@ -1,3 +1,8 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
 html{
     background-color: black;
     font-family: 'Montserrat', sans-serif;
@@ -7,30 +12,49 @@ html{
     scroll-behavior: smooth;
 }
 
-nav{
+.grid-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(span, auto);
+    grid-template-areas: 'nav nav nav'
+                         'portada portada portada'
+                         'infobar infobar infobar'
+                         'columnbar-1 columnbar-2 columnbar-3'
+                         'infomenu infomenu infomenu'
+                         'menu menu menu'
+                         'reservas reservas reservas'
+                         'datosreservas datosreservas mapa'
+                         'footer footer footer';
+}
+
+.grid-container nav{
     display: flex;
     background-color: black;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     height: 8rem;
     width: 100%;
 
     position: fixed;
     top: 0;
+
+    grid-area: nav;
 }
 
 .logo{
     height: 5rem;
 }
 
-ul{
+nav ul{
     display: inline-block;
     margin: 0;
     height: 5rem;
     list-style: none;
 }
 
-li{
+nav li{
     display: inline-block;
     margin: 1rem 2rem;
 }
@@ -45,7 +69,11 @@ nav a:hover{
     color: #A0A0A0;
 }
 
-.slider{
+.grid-container #portada{
+    grid-area: portada;
+}
+
+.grid-container .slider{
     background-image: url(../img/IMG_5974.JPG);
     background-size: cover;
     height: 100vh;
@@ -77,6 +105,11 @@ p{
     width: 100%;
 }
 
+#nosotros{
+    grid-area: infobar;
+    height: 100vh;
+}
+
 .textNosotros{
     font-size: 2rem;
     width: 70%;
@@ -104,9 +137,11 @@ p{
     justify-content: space-around;
 }
 
-#menu{
+.grid-container #menu{
     background-color: #A0A0A0;
     height: 100vh;
+
+    grid-area: menu;
 }
 
 .containerMenu{
@@ -123,15 +158,11 @@ p{
     padding: 0.3rem 2rem;
 }
 
-#nosotros{
-    height: 100vh;
+#reservas{
+    grid-area: reservas;
 }
 
-#menu{
-    height: 100vh;
-}
-
-.infoReservas{
+.grid-container .infoReservas{
     text-align: center;
     display: flex;
     justify-content: space-evenly;
@@ -147,7 +178,7 @@ label{
     margin-top: 2rem;
 }
 
-input:placeholder-shown{
+input{
     text-align: center;
 }
 
@@ -172,8 +203,9 @@ select{
 
 
 footer{
-    width: 200px;
     display: inline;
+
+    grid-area: footer;
 }
 
 footer p{
